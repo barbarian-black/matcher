@@ -104,7 +104,7 @@
 <fb:login-button scope="public_profile,email,user_friends,read_mailbox" onlogin="checkLoginState();" data-auto-logout-link="true">
 </fb:login-button>
 
-<fb:logout-button></fb:logout-button>
+<button onclick='FB.logout(function response){console.log("user logged out successfully")}'></button>
 
 <button onclick='logout()'>Logout</button>
 <div id="status"></div>
