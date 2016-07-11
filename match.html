@@ -90,6 +90,12 @@
       console.log(response);
     });
   }
+  
+  function logout(){
+    FB.logout(function respsonse){
+      console.log("User logged out successfully");
+    }
+  }
 </script>
 
 <!--
@@ -101,6 +107,7 @@
 <fb:login-button scope="public_profile,email,user_friends,read_mailbox" onlogin="checkLoginState();" data-auto-logout-link="true">
 </fb:login-button>
 
+<button onclick='logout()'>Logout</button>
 <div id="status"></div>
 
 </body>
